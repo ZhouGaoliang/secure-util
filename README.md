@@ -1,13 +1,11 @@
 # secure-util
 ##简介
-Base64编码，消息摘要，对称(DES,3DES,AES,IDEA)/非对称(RSA,ELGamal)加解密，RSA/DSA数字签名，数字证书(待完善)工具类
+Base64编码，消息摘要，对称(DES,3DES,AES,IDEA)/非对称(RSA,ELGamal)加解密，RSA/DSA数字签名，数字证书工具类
 
 ##版本信息
+V1.1 增加数字证书工具类
 V1.0 初始版本发布
 
-##升级计划
-即将发布1.1版本，更新内容：
-支持数字证书
 
 ##注意
 Java几乎各种常用加密算法都能找到对应的实现。因为美国的出口限制，Sun通过权限文件（local_policy.jar、US_export_policy.jar）做了相应限制。因此存在一些问题：

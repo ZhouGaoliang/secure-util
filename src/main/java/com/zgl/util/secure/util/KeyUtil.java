@@ -42,6 +42,7 @@ public class KeyUtil {
 		}
 		return keyGen.generateKey();
 	}
+	
 	public static KeyPair generateKeyPair(EnumKeyAlgorithm keyAlgorithm,Integer keySize) throws Exception{
 		Security.addProvider(new BouncyCastleProvider());
 	

@@ -22,23 +22,13 @@ public class Base64Util {
 	}
 	
 	
-	
-	
-	//@Test
-	public void test() throws UnsupportedEncodingException{
-		String info = "A";
-		byte[] a = info.getBytes("utf-8");
-		for (byte c : a) {
-			System.out.print(c);
-		}
-		System.out.println("\n");
-		byte[] b = encode(a);
-		for (byte c : b) {
-			System.out.print(c);
-		}
-		System.out.println("\n\n");
-		System.out.println(new String(b));
-		System.out.println(new String(b,"utf-8"));
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		String dataString = "ZGL";
+		System.out.println("Base64编码前数据：" + dataString);
+		byte[] byteData = dataString.getBytes("utf-8");
+		byte[] b = encode(byteData);
+		System.out.println("Base64编码后数据：" + new String(b));
 	}
 	
+
 }

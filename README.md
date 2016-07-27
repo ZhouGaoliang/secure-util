@@ -1,6 +1,6 @@
 # secure-util
 ##简介
-Base64编码，消息摘要，对称(DES,3DES,AES,IDEA)/非对称(RSA,ELGamal)加解密，RSA/DSA数字签名，数字证书工具类
+Base64编码，消息摘要，对称(DES,3DES,AES,IDEA)/非对称(RSA,ELGamal)加解密，RSA/DSA数字签名，数字证书/密钥库工具类
 
 ##版本信息
 V1.1 增加数字证书工具类

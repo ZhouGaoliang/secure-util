@@ -254,7 +254,7 @@ public class KeyStoreUtil {
 	public static KeyStore getKeyStoreByPath(EnumKeyStoreType keyStoreType,String keyStorePath,String keyStorePassword) 
 			throws NoSuchAlgorithmException, CertificateException, KeyStoreException, IOException{
 		FileInputStream fis = new FileInputStream(keyStorePath);
-		return getKeyStoreByPath(keyStoreType,fis, keyStorePassword);
+		return getKeyStoreByInputStream(keyStoreType,fis, keyStorePassword);
 	}
 	
 	
@@ -269,7 +269,7 @@ public class KeyStoreUtil {
 	 * @throws IOException
 	 * @throws KeyStoreException
 	 */
-	public static KeyStore getKeyStoreByPath(EnumKeyStoreType keyStoreType,InputStream is,String keyStorePassword) 
+	public static KeyStore getKeyStoreByInputStream(EnumKeyStoreType keyStoreType,InputStream is,String keyStorePassword) 
 			throws NoSuchAlgorithmException, CertificateException, IOException, KeyStoreException{
 		Security.addProvider(new BouncyCastleProvider());
 		if(keyStoreType == null){

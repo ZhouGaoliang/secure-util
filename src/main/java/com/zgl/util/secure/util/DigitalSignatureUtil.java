@@ -23,7 +23,6 @@ import com.zgl.util.secure.enums.EnumSignatureAlgorithm;
  *
  */
 public class DigitalSignatureUtil {
-	
 	/**
 	 * 私钥签名
 	 * @param signatureAlgorithm 签名算法

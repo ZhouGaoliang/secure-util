@@ -24,7 +24,7 @@ public enum EnumSignatureAlgorithm {
 	SHA256withECDSA(EnumKeyAlgorithm.ECDSA),
 	SHA384withECDSA(EnumKeyAlgorithm.ECDSA),
 	SHA512withECDSA(EnumKeyAlgorithm.ECDSA),
-	RIPEMD160withECDSA(EnumKeyAlgorithm.ECDSA),;
+	RIPEMD160withECDSA(EnumKeyAlgorithm.ECDSA);
 	
 	private EnumKeyAlgorithm keyAlgorithm;
 	private EnumSignatureAlgorithm(EnumKeyAlgorithm keyAlgorithm){
